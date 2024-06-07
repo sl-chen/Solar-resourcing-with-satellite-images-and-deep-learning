@@ -47,7 +47,7 @@ The used ground data is from SURFRAD stations (see the following table) with qua
 
 The following figure shows an illustration of regional solar irradiance estimations for TBL station using spectral satellite images. (a) The target station and $11\times11$ pixel grid of satellite images for single-station solar irradiance estimation. (b) The target station with 121 surrounding locations and the domain of used spectral satellite images for regional solar irradiance estimation.
 
-![image](https://github.com/sl-chen/Solar-forecasting-with-deep-learning-model-chain/blob/main/figures/Region.PNG)
+![image](https://github.com/sl-chen/Solar-resourcing-with-satellite-images-and-deep-learning/blob/main/figure/Model.jpg)
 
 The original deep learning model in [2] was developed for ground irradiance estimates at a single location, which is centered in the domain of satellite images with $11\times11$ pixels ((a) in the above figure). The target station can be anywhere as long as there are on-site irradiance measurements available. Following the same methodology, the target is expanded from one station to the $11\times11$ surrounding area with 121 locations ((b) in the above figure). Selected spectral satellite images of GOES-16 with the size of $21\times21$ pixels are used to obtain the GHI estimates for the whole region ($11\times11$ pixels) via the pre-trained deep learning model. For more details on solar irradiance estimation using spectal satellite images and deep learning, please refer to [2].
 
