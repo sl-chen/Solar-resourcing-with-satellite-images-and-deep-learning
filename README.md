@@ -4,7 +4,7 @@ This repository includes the data as well as example scripts for the research pa
 
 The following figure shows the flowchart for GHI and DNI estimations using spectral satellite images and deep learning.
 
-![image](https://github.com/sl-chen/Solar-forecasting-with-deep-learning-model-chain/blob/main/figures/Flowchart.PNG)
+![image](https://github.com/sl-chen/Solar-resourcing-with-satellite-images-and-deep-learning/blob/main/figure/flowchart.jpg)
 
 
 #### Data
