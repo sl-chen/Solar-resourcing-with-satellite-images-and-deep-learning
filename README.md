@@ -9,7 +9,6 @@ The following figure shows the flowchart for GHI and DNI estimations using spect
 
 #### Data
 The satellite data of GOES-16 is downloaded via public available source, e.g., Amazon Web Services, for GOES-16, please refer to: https://docs.opendata.aws/noaa-goes16/cics-readme.html#accessing-goes-data-on-aws.
-There are 8 selected spectral bands used: C01, C03, C04, C05, C06, C07, C09, and C11.
 
 |Band|$\lambda$ [μm]|Center $\lambda$ [μm]|Resolution (km)|Nickname|Type|
 |:-----:|:---------: | :---------: | :--------: |:------:| :------------: |
@@ -30,7 +29,7 @@ There are 8 selected spectral bands used: C01, C03, C04, C05, C06, C07, C09, and
 |  15 | 11.80-12.80  | 12.30 | 2 | "Dirty" longwave window | Infrared     |  
 |  16 | 13.00-13.30  | 1.378 | 2 | CO2 longwave  | Infrared |
 
-
+The correlation analysis show some satellite bands are highly correlated, therefore, only a sub set of bands is selected: C01, C03, C04, C05, C06, C07, C09, and C11.
 
 The used ground data is from SURFRAD stations (see the following table) with quality control.
 
@@ -44,21 +43,7 @@ The used ground data is from SURFRAD stations (see the following table) with qua
 |  SXF  |  43.73     | -96.92      |  473       |  UTC-6 |
 |  TBL  |  40.12     | -105.24     |  1689      |  UTC-7 |
 
-#### A summary of the publicly available data
-
-| Data type | Description | Time period (year) |
-|:-----:|:---------: | :---------: | 
-| SURFRAD<sup>a</sup>  | Irradiance measurements   | On-site measurements of solar irradiance  | 2019, 2020| 
-| GOES-16<sup>b</sup>  | Satellite measured radiance | Radiance of eight selected spectral bands | 2019, 2020|
-| NSRDB<sup>c</sup>  | Derived ground-level irradiance | Satellite-derived irradiance with a physical model | 2020|
-
-<sup>a</sup> Available at (https://gml.noaa.gov/grad/surfrad/), can be downloaded by SolarData [1].
-
-<sup>b</sup> Available at (https://registry.opendata.aws/noaa-goes/), can be download by [GOES-2-go](https://github.com/blaylockbk/goes2go).
-
-<sup>c</sup> Available at (https://nsrdb.nrel.gov/), can be downloaded by SolarData.
-
-#### Satellite-derived spatial GHI with deep learning
+#### The deep learning model for solar resource assessment
 
 The following figure shows an illustration of regional solar irradiance estimations for TBL station using spectral satellite images. (a) The target station and $11\times11$ pixel grid of satellite images for single-station solar irradiance estimation. (b) The target station with 121 surrounding locations and the domain of used spectral satellite images for regional solar irradiance estimation.
 
