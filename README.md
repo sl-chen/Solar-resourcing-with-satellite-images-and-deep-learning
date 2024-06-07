@@ -11,16 +11,25 @@ The following figure shows the flowchart for GHI and DNI estimations using spect
 The satellite data of GOES-16 is downloaded via public available source, e.g., Amazon Web Services, for GOES-16, please refer to: https://docs.opendata.aws/noaa-goes16/cics-readme.html#accessing-goes-data-on-aws.
 There are 8 selected spectral bands used: C01, C03, C04, C05, C06, C07, C09, and C11.
 
-|Band|$\lambda$ [μm]|Center $\lambda$ [μm]|Resolution (km)|Type|Valid range|Scale factor|Add offset|
-|:-----:|:---------: | :---------: | :--------: |:------:| :------------: | :------------: | :------------: |
-|  1  |  0.45-0.49   | 0.47  | 1 | Near-Infrared | 0-2046  | 0.0707 | -4.5224  |
-|  3  |  0.846-0.885 | 0.865 | 1 | Near-Infrared | 0-1022  | 0.3769 | -20.2899 |
-|  4  |  1.371-1.386 | 1.378 | 2 | Near-Infrared | 0-2046  | 0.0707 | -4.5224  | 
-|  5  |  1.58-1.64   | 1.61  | 1 | Near-Infrared | 0-1022  | 0.0958 | -3.0596  |
-|  6  |  2.225-2.275 | 2.25  | 2 | Near-Infrared | 0-1022  | 0.0301 | -0.9610  |
-|  7  |  3.80-4.00   | 3.90  | 2 | Infrared      | 0-16382 | 0.0016 | -0.0376  |
-|  9  |  6.75-7.15   | 6.95  | 2 | Infrared      | 0-2046  | 0.0225 | -0.8236  |
-|  11 |  8.30-8.70   | 8.50  | 2 | Infrared      | 0-4094  | 0.0334 | -1.3022  |
+|Band|$\lambda$ [μm]|Center $\lambda$ [μm]|Resolution (km)|Nickname|Type|
+|:-----:|:---------: | :---------: | :--------: |:------:| :------------: |
+|  1  |  0.45-0.49   | 0.47  | 1  | Blue |  Visible  |
+|  2  |  0.59-0.69   | 0.64  | 0.5 | Red | Visible |
+|  3  |  0.846-0.885 | 0.865 | 1 | Veggie | Near-Infrared |
+|  4  |  1.371-1.386 | 1.378 | 2 | Cirrus | Near-Infrared  | 
+|  5  |  1.58-1.64   | 1.61  | 1 | Snow/Ice | Near-Infrared  |
+|  6  |  2.225-2.275 | 2.25  | 2 | Cloud particle size | Near-Infrared  |
+|  7  |  3.80-4.00   | 3.90  | 2 | Shortwave window | Infrared  |
+|  8  |  5.77-6.60   | 6.19  | 2 | Upper-level water vapor | Infrared   |
+|  9  |  6.75-7.15   | 6.95  | 2 | Mid-level water vapor | Infrared  |
+|  10 |  7.24-7.44   | 7.34  | 2 | Lower-level water vapor | Infrared |
+|  11 |  8.30-8.70   | 8.50  | 2 | Cloud-top phase | Infrared   |
+|  12 |  9.42-9.80   | 9.61  | 2 | Ozone | Infrared |
+|  13 | 10.10-10.60  | 10.35 | 2 | "Clean" longwave window |  Infrared |        
+|  14 | 10.80-11.60  | 11.20 | 2 | Longwave window | Infrared     |
+|  15 | 11.80-12.80  | 12.30 | 2 | "Dirty" longwave window | Infrared     |  
+|  16 | 13.00-13.30  | 1.378 | 2 | CO$_2$ longwave  Infrared |
+
 
 
 The used ground data is from SURFRAD stations (see the following table) with quality control.
