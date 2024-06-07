@@ -28,7 +28,7 @@ There are 8 selected spectral bands used: C01, C03, C04, C05, C06, C07, C09, and
 |  13 | 10.10-10.60  | 10.35 | 2 | "Clean" longwave window |  Infrared |        
 |  14 | 10.80-11.60  | 11.20 | 2 | Longwave window | Infrared     |
 |  15 | 11.80-12.80  | 12.30 | 2 | "Dirty" longwave window | Infrared     |  
-|  16 | 13.00-13.30  | 1.378 | 2 | CO$_2$ longwave  Infrared |
+|  16 | 13.00-13.30  | 1.378 | 2 | CO2 longwave  | Infrared |
 
 
 
