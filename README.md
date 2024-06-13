@@ -45,7 +45,7 @@ The used ground data is from SURFRAD stations (see the following table) with qua
 
 #### The deep learning model for solar resource assessment
 
-The following figure shows an illustration of the structure of deep learning model for estimating ground solar irradiance using the GOES-16 images of selected bands. The inputs are images of 8 selected bands with size of 11$\times$11 pixels, the output is the clear-sky index (Note that the hyperparameters might vary for different locations, this figure is just to show the structure).
+The following figure shows an illustration of the structure of deep learning model for estimating ground solar irradiance using the GOES-16 images of selected bands. The inputs are images of 8 selected bands with size of $11\times11$ pixels, the output is the clear-sky index (Note that the hyperparameters might vary for different locations, this figure is just to show the structure).
 
 ![image](https://github.com/sl-chen/Solar-resourcing-with-satellite-images-and-deep-learning/blob/main/figure/Model.jpg)
 
