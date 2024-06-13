@@ -60,6 +60,16 @@ The original deep learning model in [2] was developed for ground irradiance esti
 |Cloudy periods|93.94 | 25.56 |  -8.16 | -2.22 | 119.40 | 32.48 |  2.50 |  0.68|
 | All periods  |85.55 | 20.57 |  -8.18 | -2.04 | 106.96 | 25.72 |  2.43 |  0.58|
 
+|               |          Grouping             ||         Grouping 2         ||  Not Grouped    |
+| First Header  | Second Header | Third Header   | Forth Header | Fifth Header | Sixth Header    |
+| ------------- | :-----------: | -------------: | :----------: | :----------: | --------------- |
+| Tall Cell     |          *Long Cell*          ||         *Long Long Cell*                    |||
+| ^^            |   **Bold**    | 1. first item  | *Italic*     | 3. third item | + first point  |\
+| ^^            |               | 1. second item |              | 1. forth item | + second point |
+
+| New section   |     More      |         Data   | ... - -- --- |||
+| And more      | With an escaped \|          || "Try 'quotes' in quotes "         |||
+
 #### Example data and notebooks
 
 The spectral satellite data of GOES-16 for BON is available [here](https://drive.google.com/drive/folders/1oUjJ_2rKpEEG6TIbKOHX7C1zAueWnucN?usp=sharing).
