@@ -53,9 +53,9 @@ The original deep learning model in [2] was developed for ground irradiance esti
 
 #### Results
 
-|   |DNNa8||NSRDB||
+|       |                             DNNa8             ||      NSRDB                                     ||
+|       |RMSE[W/m$^2$]|  nRMSE[%]  |MBE[W/m$^2$]| MBE[%] |RMSE[W/m$^2$]|   nRMSE[%]  |MBE[W/m$^2$]| MBE[%] |
 |:-----:|:---------: | :---------: | :--------: |:------:| :---------: | :---------: | :--------: |:------:|
-|  |RMSE[W/m$^2$]|nRMSE[%]|MBE[W/m$^2$]|MBE[%]|RMSE[W/m$^2$]|nRMSE[%]|MBE[W/m$^2$]|MBE[%]|
 | Clear periods|39.88 |  6.65 |  -9.78 | -1.63 |  27.09 |  4.52 &  2.15 |  0.36|
 |Cloudy periods|93.94 | 25.56 |  -8.16 | -2.22 | 119.40 | 32.48 &  2.50 |  0.68|
 | All periods  |85.55 | 20.57 |  -8.18 | -2.04 | 106.96 | 25.72 &  2.43 |  0.58|
