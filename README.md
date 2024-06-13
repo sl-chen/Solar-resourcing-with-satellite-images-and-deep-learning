@@ -53,9 +53,11 @@ The original deep learning model in [2] was developed for ground irradiance esti
 
 #### Results
 
-![](https://github.com/sl-chen/Solar-resourcing-with-satellite-images-and-deep-learning/blob/main/figure/Tables.PNG | width=100)
+The overall performance of GHI and DNI estimations using deep learning model (DNNa8) and physical solar model (NSRDB) are presented in the following Tables. Generally, DNNa8 performs better than NSRDB.
 
-<img src="https://github.com/sl-chen/Solar-resourcing-with-satellite-images-and-deep-learning/blob/main/figure/Tables.PNG" width="500">
+![image](https://github.com/sl-chen/Solar-resourcing-with-satellite-images-and-deep-learning/blob/main/figure/Tables.PNG)
+
+
 
 
 #### Example data and notebooks
