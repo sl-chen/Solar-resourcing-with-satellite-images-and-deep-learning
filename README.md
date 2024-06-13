@@ -53,6 +53,7 @@ The original deep learning model in [2] was developed for ground irradiance esti
 
 #### Results
 
+![image](https://github.com/sl-chen/Solar-resourcing-with-satellite-images-and-deep-learning/blob/main/figure/Tables.jpg)
 
 
 #### Example data and notebooks
