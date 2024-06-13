@@ -51,29 +51,14 @@ The following figure shows an illustration of the structure of deep learning mod
 
 The original deep learning model in [2] was developed for ground irradiance estimates at a single location, which is centered in the domain of satellite images with $11\times11$ pixels ((a) in the above figure). The target station can be anywhere as long as there are on-site irradiance measurements available. Following the same methodology, the target is expanded from one station to the $11\times11$ surrounding area with 121 locations ((b) in the above figure). Selected spectral satellite images of GOES-16 with the size of $21\times21$ pixels are used to obtain the GHI estimates for the whole region ($11\times11$ pixels) via the pre-trained deep learning model. For more details on solar irradiance estimation using spectal satellite images and deep learning, please refer to [2].
 
-#### Forecasting methods
+#### Results
 
-The following figure shows the strucuture of deep learning models for GHI forecasting with different inputs.
-
-![image](https://github.com/sl-chen/Solar-forecasting-with-deep-learning-model-chain/blob/main/figures/Method.PNG)
-
-The end-to-end deep learning model $\mathbb{F}$ can produce multiple CSI forecasts (multiple-output model) with forecast horizons ($\Delta t$) up to 180 minutes (i.e., 15, 30, 45, 60, 90, 120, 150, and 180-minute), which can be formulated as,
-```math
-\hat{I}_{t_0+15}, \hat{I}_{t_0+30}, ..., \hat{I}_{t_0+180} = \mathbb{F}({\boldsymbol{x}_{t_0}, \boldsymbol{x}_{t_0-5}, ..., \boldsymbol{x}_{t_0-60}})
-```
-where $\hat{I}$ denotes the CSI forecast, $\boldsymbol{x}$ represents the spatio-temporal spectral satellite measurements.
-
-The hybrid physical-deep learning model is:
-```math
-\hat{I}_{t_0+15}, \hat{I}_{t_0+30}, ..., \hat{I}_{t_0+180} = \mathbb{F}(\mathbb{P}({\boldsymbol{x}_{t_0}, \boldsymbol{x}_{t_0-5}, ..., \boldsymbol{x}_{t_0-60}})),
-```
-where $\mathbb{P}$ is the physical model used to convert spectral satellite measurements $\boldsymbol{x}$ to spatial GHI estimations of NSRDB.
-
-The deep learning model chain is then formulated as:
-```math
-\hat{I}_{t_0+15}, \hat{I}_{t_0+30}, ..., \hat{I}_{t_0+180} = \mathbb{F}(\mathbb{E}({\boldsymbol{x}_{t_0}, \boldsymbol{x}_{t_0-5}, ..., \boldsymbol{x}_{t_0-60}})),
-```
-where $\mathbb{E}$ is the deep learning model to derive spatial GHI estimates of SAT-DL from spectral satellite measurements $\boldsymbol{x}$.
+|   |DNNa8||NSRDB||
+|:-----:|:---------: | :---------: | :--------: |:------:| :---------: | :---------: | :--------: |:------:|
+|  |RMSE[W/m$^2$]|nRMSE[%]|MBE[W/m$^2$]|MBE[%]|RMSE[W/m$^2$]|nRMSE[%]|MBE[W/m$^2$]|MBE[%]|
+| Clear periods|39.88 |  6.65 |  -9.78 | -1.63 |  27.09 |  4.52 &  2.15 |  0.36|
+|Cloudy periods|93.94 | 25.56 |  -8.16 | -2.22 | 119.40 | 32.48 &  2.50 |  0.68|
+| All periods  |85.55 | 20.57 |  -8.18 | -2.04 | 106.96 | 25.72 &  2.43 |  0.58|
 
 #### Example data and notebooks
 
