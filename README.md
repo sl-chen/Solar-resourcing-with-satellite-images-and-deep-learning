@@ -58,30 +58,16 @@ The overall performance of GHI and DNI estimations using deep learning model (DN
 ![image](https://github.com/sl-chen/Solar-resourcing-with-satellite-images-and-deep-learning/blob/main/figure/Tables.PNG)
 
 
-
-
 #### Example data and notebooks
 
 The spectral satellite data of GOES-16 for BON is available [here](https://drive.google.com/drive/folders/1oUjJ_2rKpEEG6TIbKOHX7C1zAueWnucN?usp=sharing) (year of 2019).
 
 The NSRDB data for BON could be obtained from [here](https://nsrdb.nrel.gov/data-viewer) using lat/lon information.
 
-The notebook of GHI estimation at BON is available [here](https://github.com/sl-chen/Solar-forecasting-with-deep-learning-model-chain/blob/main/ghi_forecasting_bon_sat_3h.ipynb).
+The notebook of GHI estimation at BON is available [here](https://github.com/sl-chen/Solar-resourcing-with-satellite-images-and-deep-learning/blob/main/ghi_estimation_bon.ipynb).
 
-The notebook of the hybrid physical deep learning model is available [here](https://github.com/sl-chen/Solar-forecasting-with-deep-learning-model-chain/blob/main/ghi_forecasting_bon_nsrdb-3h.ipynb).
+Note that the examples made here are only for GHI estimation at the BON station. However, the estimations of GHI and DNI at other SURFRAD stations follow the same methodology.
 
-The deep learning model using satellite-derived spatial GHI estimates (with a pre-trained deep learning model) thus forms a deep learning model chain, the notebook is available [here](https://github.com/sl-chen/Solar-forecasting-with-deep-learning-model-chain/blob/main/ghi_forecasting_bon_sat-dl-3h.ipynb).
-
-
-#### Results
-
-The forecast skills of SDL (the deep learning model chain), NS (the hybrid physical deep learning model), and SAT (the end-to-end deep learning model) are shown in the following figure for all the SURFRAD stations.
-
-![image](https://github.com/sl-chen/Solar-forecasting-with-deep-learning-model-chain/blob/main/figures/Skill.PNG)
-
-
-
-Note that the examples made here are only for the BON station. However, the results for other stations follows the same methods and procedure.
 
 #### References
 [1] Ineichen, P., & Perez, R. (2002). A new airmass independent formulation for the Linke turbidity coefficient. Solar Energy, 73(3), 151-157.
