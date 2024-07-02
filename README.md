@@ -62,7 +62,7 @@ The overall performance of GHI and DNI estimations using deep learning model (DN
 
 The spectral satellite data of GOES-16 for BON is available [here](https://drive.google.com/drive/folders/1oUjJ_2rKpEEG6TIbKOHX7C1zAueWnucN?usp=sharing) (year of 2019).
 
-The NSRDB data for BON could be obtained from [here](https://nsrdb.nrel.gov/data-viewer) using lat/lon information.
+The NSRDB data for BON could be obtained from [here](https://nsrdb.nrel.gov/data-viewer) using lat and lon (lat, lon) information.
 
 The notebook of GHI estimation at BON is available [here](https://github.com/sl-chen/Solar-resourcing-with-satellite-images-and-deep-learning/blob/main/ghi_estimation_bon.ipynb).
 
